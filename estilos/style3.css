@@ -116,6 +116,20 @@ fieldset input{
     align-self: center;    
 }
 
+.navegacion ul li a:hover {
+    color: mediumslateblue;
+    font-size: 30px;
+}
+
+h1:hover {
+    color: coral;
+}
+
+.contenido div img:hover {
+    transition: all 1s;
+    transform: scale(1.1,1.2);
+}
+
 /*-------------------GRIDS---------------------------------*/
 .contenedor{
     display: grid;
