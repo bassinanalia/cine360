@@ -18,7 +18,7 @@ html{
 }
 
 .navegacion li img{
-    height: 100px;
+    height: 70px;
 }
 
 .navegacion ul li{
@@ -241,8 +241,4 @@ footer {
         max-height: 80px;
     }
     
-    .navegacion li img{
-        width: 70px;
-        height: 70px;
-    }
 }
