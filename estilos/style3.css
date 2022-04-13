@@ -11,6 +11,10 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.logo{
+    width: 90px;
+    height: 90px;
+}
 .navegacion ul {
     display: flex;
     justify-content: space-between;
@@ -23,7 +27,7 @@ html{
 
 .navegacion ul li{
     list-style-type: none;
-    align-self: center;
+   /* align-self: center;*/
 }
 
 .navegacion li a{
@@ -41,7 +45,6 @@ img {
 }
 
 .items{
-
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -55,13 +58,35 @@ img {
     text-decoration: none;
 }
 
+/***************  Cambios luego de boostrap*/
 h1{
-    padding-left: 150px;
+    padding-left: 150px !important;
+}
+
+a{    color: white !important}
+
+.navbar-light .navbar-toggler-icon {
+    background-color: white !important;
+    border-radius: 3px ;
+}
+.navbar-nav a:hover {
+    color: mediumslateblue !important;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.bg-dark {
+     --bs-bg-opacity: 0 !important;
+}
+
+.footDer{
+    padding-right: 50px !important;
 }
 
 /***** Registro .Form  *************/
 .formulario {    
     background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D) !important;  
+    height: 700px;
 }
 
 form{
@@ -187,6 +212,8 @@ footer {
 }
 
 @media screen and (max-width:480px){
+*{font-size: 12px !important;}
+
     .contenedor{
         grid-template-rows: 0.1fr 4fr 0.1fr;
     }
@@ -198,14 +225,21 @@ footer {
     .navegacion ul {
         max-height: 50px;
     }
-    
-    .navegacion li img{
-        width: 40px;
-        height: 40px;
+
+    form{
+        margin: 120px 0 30px 0px !important;
+    }
+    form h3{ font-size: 24px !important;    }
+    .logo {
+        width: 30px !important; 
+        height: 30px !important;
     }
 
     img {
         width: 100%;
+    }
+    .footDer {
+        padding-right: 2px !important; 
     }
     
 }
@@ -227,6 +261,9 @@ footer {
         width: 55px;
         height: 55px;
     }
+    .footDer {
+        padding-right: 2px !important; 
+    }
 }
 @media screen and (max-width:960px){
     .contenedor{
@@ -240,5 +277,14 @@ footer {
     .navegacion ul {
         max-height: 80px;
     }
+    form{
+        margin: 120px 0 30px 0px !important;
+    }
+    form h3{ font-size: 24px !important;    }
+
+    .footDer {
+        padding-right: 0px !important; 
+    }
+
     
 }
