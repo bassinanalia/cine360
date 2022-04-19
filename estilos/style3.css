@@ -83,8 +83,16 @@ a{    color: white !important}
     padding-right: 50px !important;
 }
 
-
-
+.tit{
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D) !important;  
+    color: black;
+    -moz-box-shadow: 5px 5px 5px #6C5B7B;
+    -webkit-box-shadow:5px 5px 5px #6C5B7B;
+    box-shadow: 5px 5px 5px #6C5B7B;
+}
+.tit:hover {
+    color: white;
+}
 
 /***** Registro .Form  *************/
 .tarjeta-wrap {    
@@ -246,9 +254,9 @@ input{
     font-size: 30px;
 }
 
-h1:hover {
+/* h1:hover {
     color: coral;
-}
+} */
 
 /* .contenido div img:hover {
     transition: all 1s;
