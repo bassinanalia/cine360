@@ -7,13 +7,13 @@
 
 /* MAPA Colores de btn de Estrenos para moverme en semana pasada, presente , proximos   */
 .btn--semPas {
-  background-color: #5571ee; }
+  background-color: #5571ee !important; }
 
 .btn--actual {
-  background-color: #6C5B7B; }
+  background-color: #6C5B7B !important; }
 
 .btn--prox {
-  background-color: #C25E30; }
+  background-color: #C25E30 !important; }
 
 /************ MAP-GET ******************/
 .formulario {

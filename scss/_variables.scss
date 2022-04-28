@@ -23,7 +23,7 @@ $estrenos: ( /*Declaramos nuestro mapa*/
 
 @each $sem, $color in $estrenos{
    .btn--#{$sem} {
-       background-color: $color;
+       background-color: $color !important;
        @extend .btn;
    }
 }
