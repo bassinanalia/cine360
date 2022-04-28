@@ -8,23 +8,28 @@
     box-sizing: border-box;
 }
 
+a{    
+    color: white !important;
+}
+
 html{
     font:$fuentePri;
 }
 
-.logo{
-    width: 90px;
-    height: 90px;
+.nav-link {
+    display: inline-block !important;
 }
+
 .navegacion ul {
     display: flex;
     justify-content: space-between;
     max-height: 100px;
     li{
         list-style-type: none;
+        margin: 15px 15px 15px 15px;
         a{
             text-decoration: none;
-            padding-right: 30px;
+            padding-right: 10px;   
          }
          &:hover {
             color: mediumslateblue;
@@ -59,8 +64,6 @@ img{
 h1{
     padding-left: 150px !important;
 }
-
-a{    color: white !important}
 
 .navbar-light .navbar-toggler-icon {
     background-color: white !important;
@@ -97,8 +100,6 @@ a{    color: white !important}
 }
 
 .tarjeta{
-   /* width: 300px;
-    height: 400px;*/
     position: relative;
     transform-style: preserve-3d !important;
     transition: 0.6s  !important;
@@ -107,8 +108,6 @@ a{    color: white !important}
 .adelante, .atras{
     backface-visibility: hidden;
     position: absolute;
-    top: 0px;
-    left: 0px;
 }
 
 .atras{
@@ -120,7 +119,7 @@ a{    color: white !important}
     -webkit-backface-visibility: hidden !important;
     backface-visibility: hidden !important;
     box-shadow: 0 0 32px 0 $fondoSec;
-    border-radius: 32px;
+    border-radius: 45px 45px 32px 32px;
     h4{
         padding-left:15px;
         text-align: center;
@@ -132,11 +131,6 @@ a{    color: white !important}
     &:hover{
         transform: rotateY(180deg) !important;
     } 
-}
-
-.formulario {    
-    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D) !important;  
-    height: 700px;
 }
 
 form{
@@ -213,6 +207,7 @@ input{
             width: 100%;
             height: 100%;
             align-self: center;    
+            border-radius: 31px; 
         }
     }
 }

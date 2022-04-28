@@ -1,3 +1,30 @@
+/***** EXTENDS *************/
+.btn, .btn--semPas, .btn--actual, .btn--prox {
+  border-radius: 5px !important;
+  font-size: 26px !important;
+  border: 1px solid #000 !important;
+  border-color: gray  !important; }
+
+/* MAPA Colores de btn de Estrenos para moverme en semana pasada, presente , proximos   */
+.btn--semPas {
+  background-color: #5571ee; }
+
+.btn--actual {
+  background-color: #6C5B7B; }
+
+.btn--prox {
+  background-color: #C25E30; }
+
+/************ MAP-GET ******************/
+.formulario {
+  background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
+  height: 700px; }
+
+/*************** Mixins ********************/
+.logo {
+  height: 90px;
+  width: 90px; }
+
 * {
   margin: 0;
   padding: 0;
@@ -5,22 +32,25 @@
   color: white;
   box-sizing: border-box; }
 
+a {
+  color: white !important; }
+
 html {
   font: normal 22px/1.5 "Arial", sans-serif; }
 
-.logo {
-  width: 90px;
-  height: 90px; }
+.nav-link {
+  display: inline-block !important; }
 
 .navegacion ul {
   display: flex;
   justify-content: space-between;
   max-height: 100px; }
   .navegacion ul li {
-    list-style-type: none; }
+    list-style-type: none;
+    margin: 15px 15px 15px 15px; }
     .navegacion ul li a {
       text-decoration: none;
-      padding-right: 30px; }
+      padding-right: 10px; }
     .navegacion ul li:hover {
       color: mediumslateblue; }
 
@@ -46,9 +76,6 @@ img {
 
 h1 {
   padding-left: 150px !important; }
-
-a {
-  color: white !important; }
 
 .navbar-light .navbar-toggler-icon {
   background-color: white !important;
@@ -79,17 +106,13 @@ a {
     transform: rotateY(180deg) !important; }
 
 .tarjeta {
-  /* width: 300px;
-    height: 400px;*/
   position: relative;
   transform-style: preserve-3d !important;
   transition: 0.6s  !important; }
 
 .adelante, .atras {
   backface-visibility: hidden;
-  position: absolute;
-  top: 0px;
-  left: 0px; }
+  position: absolute; }
 
 .atras {
   position: absolute !important;
@@ -100,7 +123,7 @@ a {
   -webkit-backface-visibility: hidden !important;
   backface-visibility: hidden !important;
   box-shadow: 0 0 32px 0 #6C5B7B;
-  border-radius: 32px; }
+  border-radius: 45px 45px 32px 32px; }
   .atras h4 {
     padding-left: 15px;
     text-align: center; }
@@ -109,10 +132,6 @@ a {
     background-color: #6C5B7B; }
   .atras:hover {
     transform: rotateY(180deg) !important; }
-
-.formulario {
-  background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D) !important;
-  height: 700px; }
 
 form {
   background-color: white !important;
@@ -177,7 +196,8 @@ input {
     .contenido div img {
       width: 100%;
       height: 100%;
-      align-self: center; }
+      align-self: center;
+      border-radius: 31px; }
 
 .diag {
   margin: 0px 20px 10px; }

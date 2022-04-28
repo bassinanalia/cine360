@@ -3,3 +3,47 @@ $fuenteSec: normal 16px/1.5 'Arial', sans-serif;
 $colorFuente: white;
 $fondo: black;
 $fondoSec: #6C5B7B;
+
+$anchoTotal:1440px;
+
+/***** EXTENDS *************/
+.btn{
+    border-radius: 5px !important;
+       font-size: 26px !important;
+       border: 1px solid #000 !important;
+       border-color : gray  !important;
+}
+
+/* MAPA Colores de btn de Estrenos para moverme en semana pasada, presente , proximos   */
+$estrenos: ( /*Declaramos nuestro mapa*/
+        semPas: #5571ee,
+        actual:  $fondoSec,
+        prox: #C25E30
+); 
+
+@each $sem, $color in $estrenos{
+   .btn--#{$sem} {
+       background-color: $color;
+       @extend .btn;
+   }
+}
+
+/************ MAP-GET ******************/
+$estiloDegrade:(
+    color: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D),
+    height: 700px
+);
+.formulario {
+    background: map-get($estiloDegrade,color);
+    height: map-get($estiloDegrade,height);
+}
+
+/*************** Mixins ********************/
+@mixin medidas ($alto, $ancho) {
+    height: $alto;
+    width: $ancho;
+}
+
+.logo{
+    @include medidas(90px,90px )
+}
