@@ -7,6 +7,9 @@
     color: white;
     box-sizing: border-box;
 }
+.disclaimer {
+    visibility: hidden !important;
+}
 
 a{    
     color: white !important;
@@ -46,7 +49,7 @@ img{
     justify-content: center;
  }
 
- .items{
+.items{
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -62,7 +65,8 @@ img{
     }
 }
 h1{
-    padding-left: 150px !important;
+    padding-left: 70px !important;
+    padding-right: 70px !important;
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -82,7 +86,7 @@ h1{
 }
 
 .tit{
-    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D) !important;  
+    background: $deg !important;  
     color: black;
     -moz-box-shadow: 5px 5px 5px $fondoSec;
     -webkit-box-shadow:5px 5px 5px $fondoSec;
@@ -91,18 +95,44 @@ h1{
         color: white;
     }
 }
+
+.fondEst{
+    background: $deg2 !important;  
+    color: black;
+    -moz-box-shadow: 5px 5px 5px $fondoCine;
+    -webkit-box-shadow:5px 5px 5px $fondoCine;
+    box-shadow: 5px 5px 5px $fondoCine;
+    &:hover{
+        color: white;
+    }
+}
+
+.fondSerie{
+    background: $deg3 !important; 
+    color: black;
+    -moz-box-shadow: 5px 5px 5px $fondoSerie;
+    -webkit-box-shadow:5px 5px 5px $fondoSerie;
+    box-shadow: 5px 5px 5px $fondoSerie;
+    &:hover{
+        color: white;
+    }
+}
+
 .tarjeta-wrap {    
     perspective: 1000;
     margin: 0px 20px 20px;
     &:hover .tarjeta{
         transform: rotateY(180deg) !important;
     } 
+    &:hover .item{
+        transform: scale(1.2);
+    } 
 }
 
 .tarjeta{
     position: relative;
     transform-style: preserve-3d !important;
-    transition: 0.6s  !important;
+    transition: 1.5s  !important;
 }
 
 .adelante, .atras{
@@ -128,9 +158,30 @@ h1{
         padding: 5px 15px 5px 15px;
         background-color: $fondoSec;
     }
-    &:hover{
-        transform: rotateY(180deg) !important;
-    } 
+}
+
+.atrasCINE{
+    position: relative !important;
+    box-shadow: 0 0 32px 0 #D4EFDF !important;
+    top:0;
+    left: 0;
+    transform: rotateY(180deg);
+    backface-visibility: hidden !important;
+    border-radius: 45px 45px 32px 32px;
+    background-color: $fondoCine;
+    h4{
+        padding-left:15px;
+        text-align: center;
+    }
+    p{
+        padding: 5px 15px 5px 15px !important;
+        background-color: $fondoCine;
+        color: black !important;
+    }
+}
+
+.rojo{
+    border: 3px solid #F9E79F !important;
 }
 
 form{
@@ -217,6 +268,40 @@ input{
     img:hover{
         transition: all 1s;
         transform: scale(1.1,1.2);
+    }
+}
+
+ .w-100{
+    width: 350px !important;
+//     // height: 500px !important;
+ }
+
+h6{
+    margin-left: 55px !important;
+    margin-top: 20px !important;
+}
+.scroll{
+    max-height: 250px !important;
+    padding-top: 5px !important;
+    border: 0.5px  solid grey;
+    display: flex;
+   overflow-x: auto;
+    .item{
+        margin: 0px !important;
+        min-width: 180px !important;
+        height: 200px !important;
+        //line-height: 130px;
+        text-align: center;
+        margin-right: 2px;
+        img{
+            border-radius: 11px 11px 11px 11px !important;
+            height: 100% !important;
+            width: 90% !important;
+        }
+    }
+    &::-webkit-scrollbar{
+        width: 0;
+        color: white !important;
     }
 }
 

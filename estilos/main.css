@@ -4,16 +4,24 @@
   font-size: 26px !important;
   border: 1px solid #000 !important;
   border-color: gray  !important; }
+  .btn:hover, .btn--semPas:hover, .btn--actual:hover, .btn--prox:hover {
+    color: white !important; }
 
 /* MAPA Colores de btn de Estrenos para moverme en semana pasada, presente , proximos   */
 .btn--semPas {
-  background-color: #5571ee !important; }
+  background-color: #45B39D !important;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #152424 !important; }
 
 .btn--actual {
-  background-color: #6C5B7B !important; }
+  background-color: #148F77 !important;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #152424 !important; }
 
 .btn--prox {
-  background-color: #C25E30 !important; }
+  background-color: #0E6251 !important;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #152424 !important; }
 
 /************ MAP-GET ******************/
 .formulario {
@@ -31,6 +39,9 @@
   background-color: black;
   color: white;
   box-sizing: border-box; }
+
+.disclaimer {
+  visibility: hidden !important; }
 
 a {
   color: white !important; }
@@ -75,7 +86,8 @@ img {
     font: normal 16px/1.5 "Arial", sans-serif; }
 
 h1 {
-  padding-left: 150px !important; }
+  padding-left: 70px !important;
+  padding-right: 70px !important; }
 
 .navbar-light .navbar-toggler-icon {
   background-color: white !important;
@@ -99,16 +111,36 @@ h1 {
   .tit:hover {
     color: white; }
 
+.fondEst {
+  background: linear-gradient(to right, #E9F7EF, #D4EFDF, #A2D9CE) !important;
+  color: black;
+  -moz-box-shadow: 5px 5px 5px #45B39D;
+  -webkit-box-shadow: 5px 5px 5px #45B39D;
+  box-shadow: 5px 5px 5px #45B39D; }
+  .fondEst:hover {
+    color: white; }
+
+.fondSerie {
+  background: linear-gradient(to right, #F5B7B1, #EC7063, #E74C3C) !important;
+  color: black;
+  -moz-box-shadow: 5px 5px 5px #F1948A;
+  -webkit-box-shadow: 5px 5px 5px #F1948A;
+  box-shadow: 5px 5px 5px #F1948A; }
+  .fondSerie:hover {
+    color: white; }
+
 .tarjeta-wrap {
   perspective: 1000;
   margin: 0px 20px 20px; }
   .tarjeta-wrap:hover .tarjeta {
     transform: rotateY(180deg) !important; }
+  .tarjeta-wrap:hover .item {
+    transform: scale(1.2); }
 
 .tarjeta {
   position: relative;
   transform-style: preserve-3d !important;
-  transition: 0.6s  !important; }
+  transition: 1.5s  !important; }
 
 .adelante, .atras {
   backface-visibility: hidden;
@@ -130,8 +162,26 @@ h1 {
   .atras p {
     padding: 5px 15px 5px 15px;
     background-color: #6C5B7B; }
-  .atras:hover {
-    transform: rotateY(180deg) !important; }
+
+.atrasCINE {
+  position: relative !important;
+  box-shadow: 0 0 32px 0 #D4EFDF !important;
+  top: 0;
+  left: 0;
+  transform: rotateY(180deg);
+  backface-visibility: hidden !important;
+  border-radius: 45px 45px 32px 32px;
+  background-color: #45B39D; }
+  .atrasCINE h4 {
+    padding-left: 15px;
+    text-align: center; }
+  .atrasCINE p {
+    padding: 5px 15px 5px 15px !important;
+    background-color: #45B39D;
+    color: black !important; }
+
+.rojo {
+  border: 3px solid #F9E79F !important; }
 
 form {
   background-color: white !important;
@@ -204,6 +254,33 @@ input {
   .diag img:hover {
     transition: all 1s;
     transform: scale(1.1, 1.2); }
+
+.w-100 {
+  width: 350px !important; }
+
+h6 {
+  margin-left: 55px !important;
+  margin-top: 20px !important; }
+
+.scroll {
+  max-height: 250px !important;
+  padding-top: 5px !important;
+  border: 0.5px  solid grey;
+  display: flex;
+  overflow-x: auto; }
+  .scroll .item {
+    margin: 0px !important;
+    min-width: 180px !important;
+    height: 200px !important;
+    text-align: center;
+    margin-right: 2px; }
+    .scroll .item img {
+      border-radius: 11px 11px 11px 11px !important;
+      height: 100% !important;
+      width: 90% !important; }
+  .scroll::-webkit-scrollbar {
+    width: 0;
+    color: white !important; }
 
 @media screen and (max-width: 480px) {
   * {
