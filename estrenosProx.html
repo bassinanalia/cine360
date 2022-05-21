@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,58 +16,68 @@
 </head>
 <body>
     <div class="conteiner">
-        <header class="row header">         
-            <nav class="col-12 navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container-fluid">  
-                    <img  src="img/logo.png" class="logo">                  
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-dark navbar-toggler-icon "></span>
-                  </button>
-                  <div class="collapse navbar-collapse navegacion" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">      
-                        <li class="col-lg-1 col-md-1"></li>          
-                        <li class="col-lg-3 col-md-4 col-sm-12 col-xs-12 nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">HOME</a>
-                        </li>
-                        <li class="col-lg-4 col-md-4 col-sm-12 col-xs-12 nav-item">
-                            <a class="nav-link" href="estrenos.html">ESTRENOS</a>
-                        </li>                      
-                        <li class="col-lg-4 col-md-4 col-sm-12  col-xs-12 nav-item">
-                            <a class="nav-link" href="peliculas.html">PELICULAS</a>
-                        </li>
-                        <li class="col-lg-3 col-md-4 col-sm-12 col-xs-12 nav-item">
-                            <a class="nav-link" href="series.html">SERIES</a>
-                        </li>
-                        <li class="col-lg-4 col-md-4 col-sm-12  col-xs-12 nav-item">
-                            <a class="nav-link" href="registro.html"> REGISTRO</a>
-                        </li>
-                    </ul>        
-                  </div>
-               </div>
-            </nav>
-        </header>
+    <header class="row header">         
+        <nav class="col-12 navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">  
+                <img  src="img/logo360.png" class="logo">                  
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+              </button>
+              <div class="navbar-collapse  collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ">      
+                    <li class="nav-item col-lg-1 col-md-1"></li>  
+                    <li class="nav-item col-lg-3 col-md-4 ">
+                        <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+                    </li>
+                  
+                    <li class="nav-item dropdown col-lg-4 col-md-4 ">
+                        <a class="nav-link dropdown-toggle nav-link" href="estrenos.html"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          ESTRENOS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="estrenosAnt.html">Estrenos Anteriores</a></li>
+                          <li><a class="dropdown-item" href="estrenosProx.html">Proximos Estrenos</a></li>
+                          <li><a class="dropdown-item" href="estrenos.html">Estrenos</a></li>
+                        </ul>
+                      </li>
+        
+                    <li class=" nav-item col-lg-4 col-md-4 ">
+                        <a class="nav-link" href="peliculas.html">PELICULAS</a>
+                    </li>
+                    <li class="nav-item col-lg-3 col-md-4 ">
+                        <a class="nav-link" href="series.html">SERIES</a>
+                    </li>
+                    <li class="nav-item col-lg-4 col-md-4 ">
+                        <a class="nav-link" href="registro.html"> REGISTRO</a>
+                    </li>
+                </ul>        
+              </div>
+           </div>
+        </nav>
+    </header>
 
-        <section class="row"> 
-            <nav class="col-12 navbar navbar-expand-lg ">  
-                  <div class="collapse navbar-collapse navegacion" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">   
-                        <h1 class="fondEst">PROXIMOS </h1>             
-                        <li class=" col-lg-1 col-md-1 "></li>
-                        <li class="col-lg-4 col-md-4 col-sm-12  col-xs-12 ">
-                            <a class="nav-link btn--semPas" href="estrenosAnt.html">SEMANA ANTERIOR</a>
-                        </li>
-                        <li><br</li>  
-                        <li class="col-lg-2 col-md-2 col-sm-12 col-xs-12 nav-item">
-                            <a class="btn--actual nav-link " href="estrenos.html">ACTUAL</a>
-                        </li>
-                        <li><br</li>  
-                        <li class="col-lg-3 col-md-2 col-sm-12  col-xs-12 nav-item">
-                            <a class="nav-link btn--prox rojo" href="estrenosProx.html"> PROXIMOS</a>
-                        </li>
-                    </ul>             
-                  </div>
-            </nav>
+    <section class="row barra align-items-center justify-content-center"> 
+        <nav class="col-lg-12 col-md-12  navbar-expand-lg navbar-expand-md">  
+            <div class=" navbar navegacion  " >
+            <ul class="navbar-nav  col-lg-12 col-md-0 col-sm-0 col-xs-0">          
+                <li class="fondEst col-lg-5  col-md-5 col-sm-0 col-xs-0 ">
+                    <h1 class="fondEst col-lg-12">ESTRENOS</h1>
+                </li>
+                <li class="fondEstB col-lg-3 col-md-3 col-sm-0 col-xs-0 nav-item">
+                    <a class="nav-link btn--semPas" href="estrenosAnt.html">SEMANA ANTERIOR</a>
+                </li>
+                <li class="fondEstC col-lg-2 col-md-2 col-sm-0 col-xs-0 nav-item">
+                    <a class="btn--actual nav-link " href="estrenos.html">ACTUAL</a>
+                </li>
+                <li class="fondEstD col-lg-3 col-md-3 col-sm-0 col-xs-0 nav-item">
+                    <a class="nav-link btn--prox rojo" href="estrenosProx.html"> PROXIMOS</a>
+                </li>
+            </ul>             
+            </div>
+        </nav>
+    </section>
 
+     <section class="row-fluid"> 
             <div class="col-12 contenido"> 
                 <div class="tarjeta-wrap " >
                     <div class="tarjeta">
@@ -148,20 +158,17 @@
             </div>
         </section>
         
-        
-        <footer class="row footer">           
-            <div class="items">
-                <h4 class="col-lg-10 col-md-10 col-sm-8 col-xs-12 ">Todos los derechos reservados</h4>
-                <section class="col-lg-2 col-md-2 col-sm-4 col-xs-12  footDer">
-                    <a href="" class="fa fa-facebook"></a>
-                    <a href="" class="fa fa-instagram"></a>
-                    <a href="" class="fa fa-twitter"></a>
-                    <a href="" class="fa fa-youtube"></a>
-                </section>
-            </div>
+    
+        <footer class="row-fluid footer col-lg-12"" >           
+            <p class="footer col-lg-12"> ©Copyright 2022 Cine360 Inc. Todos los derechos reservados</p>
+            <section class="col-lg-12">
+                <a href="" class="fa fa-facebook"></a>
+                <a href="" class="fa fa-instagram"></a>
+                <a href="" class="fa fa-twitter"></a>
+                <a href="" class="fa fa-youtube"></a>
+            </section>
         </footer>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>

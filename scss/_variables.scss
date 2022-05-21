@@ -3,12 +3,22 @@ $fuenteSec: normal 16px/1.5 'Arial', sans-serif;
 $colorFuente: white;
 $fondo: black;
 $fondoSec: #6C5B7B;
-$fondoCine:#45B39D;
+$fondoCine:#738696;
 $fondoSerie:#F1948A;
 $anchoTotal:1440px;
+$fondoFooter: #baa7c0;
 $deg:  linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
-$deg2: linear-gradient(to right, #E9F7EF, #D4EFDF , #A2D9CE);
-$deg3: linear-gradient(to right, #F5B7B1, #EC7063, #E74C3C);
+$degLogos:  linear-gradient(to right, #6C5B7B, #6761c4, #355C7D);
+$degLogos2:  linear-gradient(to right, #C06C84, #6761c4, #355C7D);
+$deg2: linear-gradient(to right, #ad546d, #ad546d, #7f46a5);
+$deg2b: linear-gradient(to right, #7f46a5, #9d46a5, #9d46a5);
+$deg2c: linear-gradient(to right, #9d46a5, #6f50c2, #7c6ea1 );
+$deg2D: linear-gradient(to right,#7c6ea1, #6287a7, #4585bd);
+
+
+$deg3: linear-gradient(to right, #cc3560, #8849be, #3496ec);
+//$deg2: linear-gradient(to right, #E9F7EF, #D4EFDF , #A2D9CE);
+// $deg3: linear-gradient(to right, #F5B7B1, #EC7063, #E74C3C);
 
 
 /***** EXTENDS *************/
@@ -16,7 +26,7 @@ $deg3: linear-gradient(to right, #F5B7B1, #EC7063, #E74C3C);
     border-radius: 5px !important;
        font-size: 26px !important;
        border: 1px solid #000 !important;
-       border-color : gray  !important;
+       border-color : black  !important;
        &:hover{
         color: white !important;
     }
@@ -24,14 +34,15 @@ $deg3: linear-gradient(to right, #F5B7B1, #EC7063, #E74C3C);
 
 /* MAPA Colores de btn de Estrenos para moverme en semana pasada, presente , proximos   */
 $estrenos: ( /*Declaramos nuestro mapa*/
-        semPas: #45B39D,
-        actual:  #148F77,
-        prox:  #0E6251
+        semPas: #ad57b4,
+        actual:  #8163d4,
+        prox:  #1c619e
 ); 
 
 @each $sem, $color in $estrenos{
    .btn--#{$sem} {
        background-color: $color !important;
+       font-size: 12px !important;
        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
        color: rgb(21, 36, 36) !important;
        @extend .btn;
@@ -55,7 +66,7 @@ $estiloDegrade:(
 }
 
 .logo{
-    @include medidas(90px,90px )
+    @include medidas(60px,60px )
 }
 
 
