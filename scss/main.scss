@@ -443,6 +443,52 @@ h6{
     }
 }
 
+/* Animacion inicio  */
+.circle{
+    margin-top: 15%;
+    margin-left: 38%;
+    
+    width: 350px;
+    height: 350px;
+    background: rgb(126, 77, 206) !important;
+  
+    animation-name: rotar;
+    animation-duration: 2s;
+ 
+    animation-fill-mode:backwards;
+}
+
+@keyframes rotar{
+    0%{
+        transform: rotate(-10deg);
+    }
+    15%{
+        transform: rotate(15deg);
+    }
+    25%{
+        transform: rotate(25deg);
+    }
+    50%{
+        transform: rotate(50deg);
+    }
+    65%{
+        transform: rotate(65deg);
+    }
+    75%{
+       transform: rotate(80deg);
+    }
+    90%{
+        transform: rotate(95deg);
+    }
+    100%{
+        transform: scale(.5);
+    }
+    
+    
+}
+
+/* Fin Animacion inicio  */
+
 @media screen and (max-width:769px){
         html{
             font-size: 12px;
